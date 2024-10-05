@@ -1,0 +1,14 @@
+.div-btn {
+    display: flex;
+    align-items: center; /* Centra verticalmente los botones */
+    justify-content: space-between; /* Espacio entre los botones */
+    padding: 1rem; /* Añade un poco de padding para mejor apariencia */
+}
+
+.spacer {
+    flex-grow: 1; /* Este div actúa como un espaciador flexible */
+}
+
+.TableRow {
+    background-color: #191970;
+}

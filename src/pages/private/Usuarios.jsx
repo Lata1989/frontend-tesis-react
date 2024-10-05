@@ -1,3 +1,4 @@
+import { Cliente } from "../../Components/Cliente/Cliente";
 import { LogoutButton } from "../../Components/LogoutButton/LogoutButton";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { Profile } from "../../Components/Profile/Profile";
@@ -17,8 +18,7 @@ export const Usuarios = () => {
 
     return (
         <div>
-            <Navbar>
-            </Navbar>
+            <Cliente></Cliente>
         </div>
     );
 };
