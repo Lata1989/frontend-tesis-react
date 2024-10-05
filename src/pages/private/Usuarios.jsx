@@ -1,8 +1,9 @@
-import { LogoutButton } from "../../components/LogoutButton/LogoutButton";
-import { Profile } from "../../components/Profile/Profile";
+import { LogoutButton } from "../../Components/LogoutButton/LogoutButton";
+import { Navbar } from "../../Components/Navbar/Navbar";
+import { Profile } from "../../Components/Profile/Profile";
 import { useAuth0 } from '@auth0/auth0-react';
 
-export const Dashboard = () => {
+export const Usuarios = () => {
     const { isAuthenticated, isLoading } = useAuth0();
 
     // Mostrar un indicador de carga mientras Auth0 verifica el estado del usuario
@@ -16,8 +17,8 @@ export const Dashboard = () => {
 
     return (
         <div>
-            <Profile />
-            <LogoutButton />
+            <Navbar>
+            </Navbar>
         </div>
     );
 };

@@ -1,11 +1,12 @@
-import { LoginButton } from "../../components/LoginButton/LoginButton";
+import { LoginButton } from "../../Components/LoginButton/LoginButton";
+import "./Home.css";
 
 export const Home = () => {
     return (
-        <>
-            <h1>Página de Inicio</h1>
+        <div className="home">
+            <h1>Bienvenido a ColApp</h1>
             <p>Por favor inicia sesión para acceder a tu Dashboard.</p>
             <LoginButton></LoginButton>
-        </>
+        </div>
     );
 }

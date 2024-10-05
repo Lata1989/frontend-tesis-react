@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Home } from './pages/public/Home';
-import { Dashboard } from './pages/private/Dashboard';
+import { Home } from './Pages/public/Home';
+import { Usuarios } from './Pages/private/Usuarios';
+import "./App.css";
 
 export const App = () => {
   const { isAuthenticated, isLoading } = useAuth0(); // Verifica si el usuario está autenticado
@@ -17,10 +18,10 @@ export const App = () => {
         {/* Ruta pública (Home) */}
         <Route path="/" element={<Home />} />
 
-        {/* Ruta protegida (Dashboard) */}
+        {/* Ruta protegida (Usuarios) */}
         <Route
-          path="/dashboard"
-          element={isAuthenticated ? <Dashboard /> : <Navigate to="/" />} // Redirige a Home si no está autenticado
+          path="/usuarios"
+          element={isAuthenticated ? <Usuarios /> : <Navigate to="/" />} // Redirige a Home si no está autenticado
         />
       </Routes>
     </Router>

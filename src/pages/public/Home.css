@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0050FA;
+}
+
+h1 {
+    color: #00FA5E;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #35E0F0;
+    font-size: 2rem;
+}
